@@ -1,0 +1,29 @@
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes neonGlow {
+      0% { text-shadow: 0px 0px 5px #ff0000, 0px 0px 10px #ff0000, 0px 0px 20px #ff9900; }
+      50% { text-shadow: 0px 0px 10px #00ff00, 0px 0px 20px #00ff00, 0px 0px 30px #0099ff; }
+      100% { text-shadow: 0px 0px 5px #ff0000, 0px 0px 10px #ff0000, 0px 0px 20px #ff9900; }
+    }
+
+    @keyframes wave {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes colorPulse {
+      0% { fill: #ff0000; }
+      50% { fill: #00ff00; }
+      100% { fill: #ff0000; }
+    }
+
+    text {
+      font-family: &apos;Arial Black&apos;, sans-serif;
+      font-size: 60px;
+      font-weight: bold;
+      fill: #ff0000;
+      animation: colorPulse 3s infinite alternate, wave 1s infinite ease-in-out, neonGlow 2s infinite alternate;
+    }
+  </style>
+  <text x="50" y="120">Systemy wbudowane</text>
+</svg>
